@@ -1,0 +1,332 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI適職診断　ばっちりキャリア</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+</head>
+<body>
+
+    <form class="w-75 mx-auto">
+        <p class="mt-3">あなたは新しい人と出会うことを楽しみますか?</p>
+        <select class="form-control w-100 mt-1" name="EI1">
+            <option value="3">とてもよく当てはまる</option>
+            <option value="2">当てはまる</option>
+            <option value="1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="-1">あまり当てはまらない</option>
+            <option value="-2">当てはまらない</option>
+            <option value="-3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">あなたは現実的な問題に関心がありますか?</p>
+        <select class="form-control w-100 mt-1" name="SN1">
+            <option value="3">とてもよく当てはまる</option>
+            <option value="2">当てはまる</option>
+            <option value="1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="-1">あまり当てはまらない</option>
+            <option value="-2">当てはまらない</option>
+            <option value="-3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">あなたは論理的な思考を好みますか?</p>
+        <select class="form-control w-100 mt-1" name="TF1">
+            <option value="3">とてもよく当てはまる</option>
+            <option value="2">当てはまる</option>
+            <option value="1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="-1">あまり当てはまらない</option>
+            <option value="-2">当てはまらない</option>
+            <option value="-3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">あなたは計画を立てて行動することを好みますか?</p>
+        <select class="form-control w-100 mt-1" name="JP1">
+            <option value="3">とてもよく当てはまる</option>
+            <option value="2">当てはまる</option>
+            <option value="1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="-1">あまり当てはまらない</option>
+            <option value="-2">当てはまらない</option>
+            <option value="-3">全く当てはまらない</option>
+        </select>
+
+        <p class="mt-3">あなたは一人で過ごす時間を好みますか?</p>
+        <select class="form-control w-100 mt-1" name="EI2">
+            <option value="-3">とてもよく当てはまる</option>
+            <option value="-2">当てはまる</option>
+            <option value="-1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="1">あまり当てはまらない</option>
+            <option value="2">当てはまらない</option>
+            <option value="3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">あなたは想像力と創造力を重視しますか?</p>
+        <select class="form-control w-100 mt-1" name="SN2">
+            <option value="-3">とてもよく当てはまる</option>
+            <option value="-2">当てはまる</option>
+            <option value="-1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="1">あまり当てはまらない</option>
+            <option value="2">当てはまらない</option>
+            <option value="3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">あなたは感情的な判断を重視しますか?</p>
+        <select class="form-control w-100 mt-1" name="TF2">
+            <option value="-3">とてもよく当てはまる</option>
+            <option value="-2">当てはまる</option>
+            <option value="-1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="1">あまり当てはまらない</option>
+            <option value="2">当てはまらない</option>
+            <option value="3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">あなたは柔軟性のある行動を好みますか?</p>
+        <select class="form-control w-100 mt-1" name="JP2">
+            <option value="-3">とてもよく当てはまる</option>
+            <option value="-2">当てはまる</option>
+            <option value="-1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="1">あまり当てはまらない</option>
+            <option value="2">当てはまらない</option>
+            <option value="3">全く当てはまらない</option>
+        </select>
+
+        <p class="mt-3">人と話をするのが好きですか?</p>
+        <select class="form-control w-100 mt-1" name="EI3">
+            <option value="3">とてもよく当てはまる</option>
+            <option value="2">当てはまる</option>
+            <option value="1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="-1">あまり当てはまらない</option>
+            <option value="-2">当てはまらない</option>
+            <option value="-3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">具体的な事実に基づいて判断しますか?</p>
+        <select class="form-control w-100 mt-1" name="SN3">
+            <option value="3">とてもよく当てはまる</option>
+            <option value="2">当てはまる</option>
+            <option value="1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="-1">あまり当てはまらない</option>
+            <option value="-2">当てはまらない</option>
+            <option value="-3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">分析的な思考を好みますか?</p>
+        <select class="form-control w-100 mt-1" name="TF3">
+            <option value="3">とてもよく当てはまる</option>
+            <option value="2">当てはまる</option>
+            <option value="1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="-1">あまり当てはまらない</option>
+            <option value="-2">当てはまらない</option>
+            <option value="-3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">予定を立てて物事を進めますか?</p>
+        <select class="form-control w-100 mt-1" name="JP3">
+            <option value="3">とてもよく当てはまる</option>
+            <option value="2">当てはまる</option>
+            <option value="1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="-1">あまり当てはまらない</option>
+            <option value="-2">当てはまらない</option>
+            <option value="-3">全く当てはまらない</option>
+        </select>
+
+        <p class="mt-3">自分の時間を大切にしますか?</p>
+        <select class="form-control w-100 mt-1" name="EI4">
+            <option value="-3">とてもよく当てはまる</option>
+            <option value="-2">当てはまる</option>
+            <option value="-1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="1">あまり当てはまらない</option>
+            <option value="2">当てはまらない</option>
+            <option value="3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">理論や可能性に注目しますか?</p>
+        <select class="form-control w-100 mt-1" name="SN4">
+            <option value="-3">とてもよく当てはまる</option>
+            <option value="-2">当てはまる</option>
+            <option value="-1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="1">あまり当てはまらない</option>
+            <option value="2">当てはまらない</option>
+            <option value="3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">人々の感情を大切にしますか?</p>
+        <select class="form-control w-100 mt-1" name="TF4">
+            <option value="-3">とてもよく当てはまる</option>
+            <option value="-2">当てはまる</option>
+            <option value="-1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="1">あまり当てはまらない</option>
+            <option value="2">当てはまらない</option>
+            <option value="3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">状況に応じて柔軟に対応しますか?</p>
+        <select class="form-control w-100 mt-1" name="JP4">
+            <option value="-3">とてもよく当てはまる</option>
+            <option value="-2">当てはまる</option>
+            <option value="-1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="1">あまり当てはまらない</option>
+            <option value="2">当てはまらない</option>
+            <option value="3">全く当てはまらない</option>
+        </select>
+
+        <p class="mt-3">イベントや社交活動に積極的に参加しますか?</p>
+        <select class="form-control w-100 mt-1" name="EI5">
+            <option value="3">とてもよく当てはまる</option>
+            <option value="2">当てはまる</option>
+            <option value="1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="-1">あまり当てはまらない</option>
+            <option value="-2">当てはまらない</option>
+            <option value="-3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">現在の状況に集中しますか?</p>
+        <select class="form-control w-100 mt-1" name="SN5">
+            <option value="3">とてもよく当てはまる</option>
+            <option value="2">当てはまる</option>
+            <option value="1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="-1">あまり当てはまらない</option>
+            <option value="-2">当てはまらない</option>
+            <option value="-3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">客観的な基準で判断しますか?</p>
+        <select class="form-control w-100 mt-1" name="TF5">
+            <option value="3">とてもよく当てはまる</option>
+            <option value="2">当てはまる</option>
+            <option value="1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="-1">あまり当てはまらない</option>
+            <option value="-2">当てはまらない</option>
+            <option value="-3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">決定を早めに行いますか?</p>
+        <select class="form-control w-100 mt-1" name="JP5">
+            <option value="3">とてもよく当てはまる</option>
+            <option value="2">当てはまる</option>
+            <option value="1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="-1">あまり当てはまらない</option>
+            <option value="-2">当てはまらない</option>
+            <option value="-3">全く当てはまらない</option>
+        </select>
+
+        <p class="mt-3">静かに一人で過ごすことを好みますか?</p>
+        <select class="form-control w-100 mt-1" name="EI6">
+            <option value="-3">とてもよく当てはまる</option>
+            <option value="-2">当てはまる</option>
+            <option value="-1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="1">あまり当てはまらない</option>
+            <option value="2">当てはまらない</option>
+            <option value="3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">未来の可能性を考えますか?</p>
+        <select class="form-control w-100 mt-1" name="SN6">
+            <option value="-3">とてもよく当てはまる</option>
+            <option value="-2">当てはまる</option>
+            <option value="-1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="1">あまり当てはまらない</option>
+            <option value="2">当てはまらない</option>
+            <option value="3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">状況に応じて柔軟に判断しますか?</p>
+        <select class="form-control w-100 mt-1" name="TF6">
+            <option value="-3">とてもよく当てはまる</option>
+            <option value="-2">当てはまる</option>
+            <option value="-1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="1">あまり当てはまらない</option>
+            <option value="2">当てはまらない</option>
+            <option value="3">全く当てはまらない</option>
+        </select>
+        <p class="mt-3">最後まで決定を保留する傾向がありますか?</p>
+        <select class="form-control w-100 mt-1" name="JP6">
+            <option value="-3">とてもよく当てはまる</option>
+            <option value="-2">当てはまる</option>
+            <option value="-1">少し当てはまる</option>
+            <option value="0">どちらでもない</option>
+            <option value="1">あまり当てはまらない</option>
+            <option value="2">当てはまらない</option>
+            <option value="3">全く当てはまらない</option>
+        </select>
+
+        <input type="submit" class="mt-4 btn btn-primary" value="送信">
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            const liffId = "2002003286-RLAEENxD";
+            initializeLiff(liffId);
+        })
+
+        function initializeLiff(liffId) {
+            liff.init({
+                liffId: liffId
+            }).then(() => {
+                initializeApp();
+            }).catch((err) => {
+                console.log('LIFF Initialization failed ', err);
+            });
+        }
+
+        function sendImage(img_url) {
+            liff.sendMessages([{
+                'type': 'image',
+                "originalContentUrl": img_url,
+                "previewImageUrl": img_url
+            }]).then(function () {
+                liff.closeWindow();
+            }).catch(function (error) {
+                window.alert('Failed to send message ' + error);
+            });
+        }
+        
+        const params = (new URL(document.location)).searchParams;
+        const key = params.get('key');
+
+        $(function () {
+            $('form').submit(function () {
+                let ei=0,sn=0,tf=0,jp=0;
+                let mbti_img="https://amplil.github.io/liff_mbti_job/img/";
+                for(let i=1; i<=6; i++){
+                    //console.log($(`select[name="EI${i}"]`).val())
+                    ei+=parseFloat($(`select[name="EI${i}"]`).val());
+                    sn+=parseFloat($(`select[name="SN${i}"]`).val());
+                    tf+=parseFloat($(`select[name="TF${i}"]`).val());
+                    jp+=parseFloat($(`select[name="JP${i}"]`).val());
+                }
+
+                if(ei>0) mbti_img+="E"
+                else mbti_img+="I"
+                if(sn>0) mbti_img+="S"
+                else mbti_img+="N"
+                if(tf>0) mbti_img+="T"
+                else mbti_img+="F"
+                if(jp>0) mbti_img+="J"
+                else mbti_img+="P"
+
+                console.log(ei,sn,tf,jp);
+                //console.log(mbti_img+".jpg");
+
+                sendImage(mbti_img+".jpg");
+
+                return false;
+            });
+        });
+
+    </script>
+
+</body>
+</html>
