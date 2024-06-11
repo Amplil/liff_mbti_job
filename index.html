@@ -292,6 +292,15 @@
                 window.alert('Failed to send message ' + error);
             });
         }
+
+        function sendText(text) {
+            liff.sendMessages([{
+                'type': 'text',
+                'text': text
+            }]).catch(function (error) {
+                window.alert('Failed to send message ' + error);
+            });
+        }
         
         const params = (new URL(document.location)).searchParams;
         const key = params.get('key');
@@ -320,6 +329,7 @@
                 console.log(ei,sn,tf,jp);
                 //console.log(mbti_img+".jpg");
 
+                sendText("【診断結果】");
                 sendImage(mbti_img+".jpg");
 
                 return false;
